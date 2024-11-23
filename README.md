@@ -1,39 +1,45 @@
-# 32Bit_ALU Simulation
+##             Exp-No:3 - 32 Bit ALU Design 
 
-# Aim: 
 
-Write a verilog code for 32 bit ALU supporting four logical and four arithmetic operations,use case statement and if statement for ALU behavioral modeling.
+## Aim:
 
-To Verify the Functionality using Test Bench.
+  Write a verilog code for 32 bit ALU supporting four logical and four arithmetic operations,use case statement and if statement for ALU behavioral modeling.
 
-# Tool Required:
+  To Verify the Functionality using Test Bench.
 
-Functional Simulation: Incisive Simulator (ncvlog, ncelab, ncsim)
+
+## Tool Required:
+
+  Functional Simulation: Incisive Simulator (ncvlog, ncelab, ncsim)
+
 
 ## Design Information and Bock Diagram:
 
-The ALU will take in two 32-bit values, and control line. An Arithmetic unit does the following task like addition subtraction, multiplication and logical operations. As the input is given in 32 bit we get 32 bit output. The arithmetic will show only one output at a time so a selector is necessary to select one of the operator.
-
+  The ALU will take in two 32-bit values, and control line. An Arithmetic unit does the following task like addition subtraction, multiplication and logical operations. As the input is given in 32 bit we get 32 bit output. The arithmetic will show only one output at a time so a selector is necessary to select one of the operator.
 
 ![377364811-e574788c-253f-46da-8468-298fe2844f7a](https://github.com/user-attachments/assets/f71ee8f6-c445-47ab-832d-7b5d4ba9f602)
 
 ### Fig 1 : Block Diagram of 32 Bit ALU 
 
-## Creating a Work space :
+Creating a Work space:
 
-Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
+  Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
 
-## Creating Source Codes 
 
-In the Terminal, type gedit <filename>.v (ex: gedit alu_32bit.v). 
+Creating Source Codes:
 
-A Blank Document opens up into which the following source code can be typed down. 
+  In the Terminal, type gedit .v (ex: gedit alu_32bit.v).
 
-(Note : File name should be with HDL Extension)
+  A Blank Document opens up into which the following source code can be typed down.
 
-## a)To Verify the Functionality using Test Bench
+  (Note : File name should be with HDL Extension)
 
-## Source Code – Using Case Statement :
+
+a)To Verify the Functionality using Test Bench
+
+
+Source Code – Using Case Statement:
+
 
 module alu_32bit_case(y,a,b,f);
 input [31:0]a;
@@ -55,11 +61,17 @@ endcase
 end
 endmodule
 
-Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
+  Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
-## Creating Test bench:
+Creating Test bench:
 
-Smodule alu_32bit_tb_case;
+  Similarly, create your test bench using gedit <filename_tb>.v or <filename_tb>.vhdl to open a new blank document (alu_32bit_tb_case).
+
+
+Test Bench:
+
+
+module alu_32bit_tb_case;
 reg [31:0]a;
 reg [31:0]b;
 reg [2:0]f;
@@ -80,24 +92,19 @@ b=32'hFFFFFFFF;
 end
 endmodule
 
-## Test Bench :
+  Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
-(Include test bench program here)
+Functional Simulation:
 
-Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
+  Invoke the cadence environment by type the below commands
 
-## Functional Simulation: 
+    tcsh (Invokes C-Shell)
 
-Invoke the cadence environment by type the below commands 
+    source /cadence/install/cshrc (mention the path of the tools)
 
-tcsh (Invokes C-Shell) 
+    (The path of cshrc could vary depending on the installation destination)
 
-source /cadence/install/cshrc (mention the path of the tools) 
-
-(The path of cshrc could vary depending on the installation destination)
-      
-After this you can see the window like below 
-
+  After this you can see the window like below
 
 ![0](https://github.com/user-attachments/assets/a2678337-3594-4a1e-9633-6a9d3c20c2c6)
 
