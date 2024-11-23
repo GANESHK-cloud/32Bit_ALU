@@ -13,17 +13,28 @@
   Functional Simulation: Incisive Simulator (ncvlog, ncelab, ncsim)
 
 
+
+
 ## Design Information and Bock Diagram:
 
   The ALU will take in two 32-bit values, and control line. An Arithmetic unit does the following task like addition subtraction, multiplication and logical operations. As the input is given in 32 bit we get 32 bit output. The arithmetic will show only one output at a time so a selector is necessary to select one of the operator.
 
 ![377364811-e574788c-253f-46da-8468-298fe2844f7a](https://github.com/user-attachments/assets/f71ee8f6-c445-47ab-832d-7b5d4ba9f602)
 
+
+
 ### Fig 1 : Block Diagram of 32 Bit ALU 
 
 Creating a Work space:
 
   Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
+
+
+
+
+
+
+
 
 
 ## Creating Source Codes:
@@ -36,6 +47,7 @@ Creating a Work space:
 
 
 a)To Verify the Functionality using Test Bench
+
 
 
 ## Source Code – Using Case Statement:
@@ -51,8 +63,10 @@ Creating Test bench:
   Similarly, create your test bench using gedit <filename_tb>.v or <filename_tb>.vhdl to open a new blank document (alu_32bit_tb_case).
 
 
-## Test Bench:
 
+
+
+## Test Bench:
 
 
 ![image](https://github.com/user-attachments/assets/98650ce6-ecd7-49f5-a1cc-fce2b7a02370)
