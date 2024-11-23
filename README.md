@@ -26,7 +26,7 @@ Creating a Work space:
   Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
 
 
-Creating Source Codes:
+## Creating Source Codes:
 
   In the Terminal, type gedit .v (ex: gedit alu_32bit.v).
 
@@ -38,28 +38,11 @@ Creating Source Codes:
 a)To Verify the Functionality using Test Bench
 
 
-Source Code – Using Case Statement:
+## Source Code – Using Case Statement:
 
 
-module alu_32bit_case(y,a,b,f);
-input [31:0]a;
-input [31:0]b;
-input [2:0]f;
-output reg [31:0]y;
-always@(*)
-begin
-case(f)
-3'b000:y=a&b; //AND Operation
-3'b001:y=a|b; //OR Operation
-3'b010:y=~(a&b); //NAND Operation
-3'b011:y=~(a|b); //NOR Operation
-3'b100:y=a+b; //Addition
-3'b101:y=a-b; //Subtraction
-3'b110:y=a*b; //Multiply
-default:y=32'bx;
-endcase
-end
-endmodule
+![image](https://github.com/user-attachments/assets/ec9c2cfc-bc3d-4472-b542-c9b3744535a2)
+
 
   Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
@@ -68,29 +51,14 @@ Creating Test bench:
   Similarly, create your test bench using gedit <filename_tb>.v or <filename_tb>.vhdl to open a new blank document (alu_32bit_tb_case).
 
 
-Test Bench:
+## Test Bench:
 
 
-module alu_32bit_tb_case;
-reg [31:0]a;
-reg [31:0]b;
-reg [2:0]f;
-wire [31:0]y;
-alu_32bit_case test2(.y(y),.a(a),.b(b),.f(f));
-initial
-begin
-a=32'h00000000;
-b=32'hFFFFFFFF;
-#10 f=3'b000;
-#10 f=3'b001;
-#10 f=3'b010;
-#10 f=3'b011;
-#10 f=3'b100;
-#10 f=3'b101;
-#10 f=3'b110;
-#10;$stop;
-end
-endmodule
+
+![image](https://github.com/user-attachments/assets/98650ce6-ecd7-49f5-a1cc-fce2b7a02370)
+
+
+
 
   Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 
@@ -105,6 +73,8 @@ Functional Simulation:
     (The path of cshrc could vary depending on the installation destination)
 
   After this you can see the window like below
+
+  
 
 ![0](https://github.com/user-attachments/assets/a2678337-3594-4a1e-9633-6a9d3c20c2c6)
 
@@ -123,6 +93,9 @@ It will invoke the nclaunch window for functional simulation we can compile,elab
 
 ![5](https://github.com/user-attachments/assets/b3fd4c3c-a1ed-4759-afa6-22935611062b)
 
+
+
+
 ### Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
@@ -130,6 +103,9 @@ Select Multiple Step and then select “Create cds.lib File” as shown in below
 Click the cds.lib file and save the file by clicking on Save option 
 
 ![4](https://github.com/user-attachments/assets/618797ba-8993-4c16-b4cf-40bce142bb9b)
+
+
+
 
 ### Fig 4:cds.lib file Creation
 
@@ -141,9 +117,19 @@ We are simulating verilog design without using any libraries
 
 A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
+
+
+
 ![2](https://github.com/user-attachments/assets/2f95012a-f50c-41aa-a3a3-cbd3a9b5f67f)
 
+
+
+
 ### Fig 5: Selection of Don’t include any libraries
+
+
+
+
 
 A ‘NCLaunch window’ appears as shown in figure below
 
@@ -216,9 +202,16 @@ Outputs: Elaborate database updated in mapped library if successful, generates r
 
 After elaboration the file will come under snapshot. Select the test bench and simulate it.
 
+
+
 ![8](https://github.com/user-attachments/assets/b8fea6be-a855-4d94-80bf-65e01bdeb914)
 
+
+
+
 ## Fig 8: Elaboration Launch Option
+
+
 
 ## Step 3: Simulation: 
 
@@ -236,10 +229,15 @@ Steps for simulation – Run the simulation command with simulator options
 
 ## Fig 9: Design Browser window for simulation
 
+
+
+
 ![image](https://github.com/user-attachments/assets/ef9c16a7-6fd2-4525-81bf-5ba21de15528)
 
 
 ## Fig 10:Simulation Waveform Window
+
+
 
 ![9](https://github.com/user-attachments/assets/21dd6195-a43a-4771-a795-77240d9db37d)
 
@@ -247,6 +245,10 @@ Steps for simulation – Run the simulation command with simulator options
 
 
 
+
+## Result:
+
+  The functionality of a 4bit_up-down asynchronous reset Counter was successfully verified using a test bench and simulated with the nclaunch tool.
 
 
 
