@@ -1,5 +1,6 @@
 ##             Exp-No:3 - 32 Bit ALU Design 
 
+<br>
 
 ## Aim:
 
@@ -28,15 +29,15 @@
 Creating a Work space:
 
   Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ## Creating Source Codes:
 
   In the Terminal, type gedit .v (ex: gedit alu_32bit.v).
@@ -47,9 +48,17 @@ Creating a Work space:
 
 
 a)To Verify the Functionality using Test Bench
+<br>
 
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ## Source Code – Using Case Statement:
 
 
@@ -64,7 +73,15 @@ Creating Test bench:
 
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Test Bench:
 
